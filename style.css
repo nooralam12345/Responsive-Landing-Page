@@ -1,0 +1,77 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+section {
+    padding: 100px 20px;
+    height: 100vh;
+}
+section#home{background-color: #1d1b1bce;}
+section#services{background-color: #109116;}
+section#about{background-color: #ddd;}
+section#contact{background-color: #999;}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    padding: 20px 0;
+}
+
+.navbar.scrolled {
+    background: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #29a35cee;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover {
+    color: #1de83fde;
+    border-bottom: 2px solid #e8491d9d;
+}
+
+.navbar.scrolled .nav-links a {
+    color: #8ba015ef;
+    font-size: larger;
+}
+
+.navbar.scrolled .nav-links a:hover {
+    color: #1de85acb;
+    border-bottom: 2px solid #1de85acb;
+}
